@@ -79,3 +79,7 @@ variable "image_version" {
   type        = string
   default     = "latest"
 }
+variable "tags" {
+  description = "A mapping of tags which should be assigned to the Virtual Network"
+  default     = {}
+}

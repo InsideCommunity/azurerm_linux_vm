@@ -12,6 +12,7 @@ resource "azurerm_linux_virtual_machine" "az_vm_linux" {
   admin_password                  = var.vm_auth_method == "password" ? var.admin_password : null
   network_interface_ids           = var.network_interface_ids
   disable_password_authentication = var.vm_auth_method == "password" ? false : true
+  tags                            = var.tags 
 
   dynamic "admin_ssh_key" {
     for_each = local.ssh_key_auth
