@@ -3,8 +3,8 @@ locals {
 }
 
 resource "azurerm_linux_virtual_machine" "az_vm_linux" {
-  name                            = var.vm_name
-  computer_name                   = var.computer_name == "" ? var.vm_name : var.computer_name
+  name                            = var.name
+  computer_name                   = var.computer_name == "" ? var.name : var.computer_name
   resource_group_name             = var.resource_group_name
   location                        = var.location
   size                            = var.vm_size

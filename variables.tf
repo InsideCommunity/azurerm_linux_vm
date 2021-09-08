@@ -7,7 +7,7 @@ variable "vm_auth_method" {
     error_message = "Authentication method can be only ssh_key or password."
   }
 }
-variable "vm_name" {
+variable "name" {
   description = "The name of the Linux Virtual Machine."
   type        = string
 }
