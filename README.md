@@ -1,4 +1,4 @@
-# TF_azurerm_linux_vm_module
+# Azurerm_linux_vm
 
 Deploy Azure Linux virtual machine with a dedicated Terraform module.
 
